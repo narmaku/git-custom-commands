@@ -1,7 +1,11 @@
+set -e
+
 count=0
 for branch in $(git branch -vv | grep ': gone]' | awk '{print $1}')
 do
   git branch -D $branch
   count=(count + 1)
 done
-echo "Successfully deleted ${count} local ghost branches.\n"
+
+echo "Successfully deleted ${count} local ghost branches."
+
