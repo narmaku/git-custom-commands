@@ -6,7 +6,8 @@ Repository with custom GIT commands that can be used to automate manual tasks or
 2. They cannot end with .sh or similar. Example: `git-lazycheckout`.
 3. Scripts must be accessible from $PATH. This can be done by:
     - Modifying your .bashrc (or similar  to your shell/terminall)
-    - Installing (copying or moving) the scripts to any of the valid defualt $PATH locations (less recommended)
+    - Installing (copying or moving) the scripts to any of the valid default $PATH locations (less recommended)
+4. Then you need to make sure they are executable. You can change the attribute by running `chmod +x src/*`
 
 ### How to use your custom git commands
 Once the scripts are in the right location, in the new terminal session (to take new scripts from $PATH) you can just invoke them with `git <your_command>`.
