@@ -1,0 +1,6 @@
+set -e
+
+git stash
+git fetch upstream
+git rebase upstream/main
+git stash pop
